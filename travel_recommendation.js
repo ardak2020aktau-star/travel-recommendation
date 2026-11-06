@@ -16,6 +16,11 @@ function findDestinations(input) {
   const categories = {beach:'beach', beaches:'beach', temple:'temple', temples:'temple', 'пляж':'beach', 'пляжи':'beach', 'храм':'temple', 'храмы':'temple'};
   const countries = {'австралия':'australia', 'япония':'japan', 'бразилия':'brazil'};
   if (!query) return [];
+  if (['country', 'countries', 'страна', 'страны'].includes(query)) {
+    return ['Australia', 'Japan', 'Brazil'].map(country =>
+      destinations.find(place => place.country === country && place.category === 'city')
+    );
+  }
   if (categories[query]) return destinations.filter(place => place.category === categories[query]);
   const term = countries[query] || query;
   return destinations.filter(place => `${place.country} ${place.name}`.toLowerCase().includes(term));
