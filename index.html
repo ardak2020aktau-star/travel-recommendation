@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Bloom — Find your next journey</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="travel_recommendation.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">✦ Travel Bloom</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <form id="search-form" role="search" class="search">
+      <label class="sr-only" for="keyword">Search destinations</label>
+      <input id="keyword" type="search" placeholder="Beach, temple, Australia…" required>
+      <button type="submit">Search</button>
+      <button id="clear-button" type="button" class="secondary">Clear</button>
+    </form>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A little curiosity. A new horizon.</p>
+      <h1>Your next journey<br>starts here.</h1>
+      <p class="intro">Discover peaceful beaches, remarkable temples, and cities full of stories. Search for a place that inspires you and start exploring.</p>
+      <a class="button" href="#explore">Explore destinations ↗</a>
+      <p class="photo-note">Travel ideas for your next adventure</p>
+    </section>
+    <section id="explore" class="section">
+      <div class="section-heading"><div><p class="eyebrow">Find your inspiration</p><h2>Where would you like to go?</h2></div></div>
+      <p>Try <strong>beach</strong>, <strong>temple</strong>, <strong>Australia</strong>, <strong>Japan</strong>, or <strong>Brazil</strong>.</p>
+      <div class="suggestions" aria-label="Search suggestions">
+        <button type="button" data-query="beach">Beaches</button>
+        <button type="button" data-query="temple">Temples</button>
+        <button type="button" data-query="Australia">Australia</button>
+        <button type="button" data-query="Japan">Japan</button>
+        <button type="button" data-query="Brazil">Brazil</button>
+      </div>
+      <p id="search-status" role="status" aria-live="polite">Choose a category or enter a search above.</p>
+      <div id="results" class="cards"></div>
+    </section>
+  </main>
+  <footer>Travel Bloom · A JavaScript learning project</footer>
+</body>
+</html>
