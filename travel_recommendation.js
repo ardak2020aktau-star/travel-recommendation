@@ -2,7 +2,7 @@
 const destinations = [
   {name:'Bora Bora', country:'French Polynesia', category:'beach', description:'Explore turquoise water and quiet island scenery.', image:'photo-1500375592092-40eb2168fd21'},
   {name:'Copacabana Beach', country:'Brazil', category:'beach', description:'Discover a coastal escape in Rio de Janeiro.', image:'photo-1516306580123-e6e52b1b7b5f'},
-  {name:'Angkor Wat', country:'Cambodia', category:'temple', description:'Explore a temple complex surrounded by a remarkable cultural landscape.', image:'photo-1539650116574-75c0c6d73f6e'},
+  {name:'Angkor Wat', country:'Cambodia', category:'temple', description:'Explore a temple complex surrounded by a remarkable cultural landscape.', image:'photo-1566706546199-a93ba33ce9f7'},
   {name:'Kyoto temples', country:'Japan', category:'temple', description:'Discover traditional architecture and peaceful temple gardens.', image:'photo-1493976040374-85c8e12f0c0e'},
   {name:'Sydney', country:'Australia', category:'city', description:'Find inspiration around the harbour and waterfront.', image:'photo-1506973035872-a4ec16b8e8d9'},
   {name:'Melbourne', country:'Australia', category:'city', description:'Explore city streets, creative spaces, and urban culture.', image:'photo-1514395462725-fb4566210144'},
